@@ -79,10 +79,72 @@ height: 2px;
 left: 50%;
 transform: translateX(-50%);
 }
+
 nav ul li:nth-child(2) a {
     color:black;
 size: 16px;
 }
+
+p {
+    margin-bottom: 20px;
+}
+
+   button{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    padding: 15px 16px ;
+    
+    
+    position:absolute;
+    height: 5px;
+    width: 150px;
+    left: 235px;
+    top: 240px;
+    
+    
+    color: #F2F2F2;
+    background: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    
+    }
+
+input {
+display: flex;
+flex-direction: row;
+align-items: center;
+
+position: absolute;
+top: 240px;
+left:65px;
+height: 31px;
+width: 260px;
+background-color: white;
+border: 1px solid #f2f2f2;
+gap: 30px;
+}
+
+/**ajouter une catégorie location dot + input et les mettres dans une box**/
+
+.fa-location-dot {
+display: flex;
+flex-direction: row;
+align-items: center;
+
+position: absolute;
+
+height: 31px;
+width: 30px;
+left: 38px;
+top:240px;
+
+    color: black;
+background-color: #F2F2F2;
+border-radius: 15px 0px 0px 12px;
+
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -122,6 +184,7 @@ size: 16px;
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+    margin-top: 50px;
 }
 
 /****** Hebergements ***********/
