@@ -1,10 +1,11 @@
 /****** General ***********/
 
 * {
+    
     position: flex;
     font-family: 'Raleway', sans-serif;
     justify-content: center;
-        max-width: 1400px;
+        max-width: 1440px;
         box-sizing: border-box;
         font-family: "Raleway";
         margin: 0;
@@ -50,22 +51,25 @@ float: right;
  
 ul{
 list-style: none;
-margin: 0;
-padding: 0;
+margin: 0px;
+padding: 0px;
+
 }
 
 li {
     display: inline-block;
+
 }
 a {
 display: block;
-padding: 10px;
+padding: 35px;
 }
 
 nav ul li:first-child a{
 position: relative;
     color:#0065FC;
 size: 16px;
+
 }
 
 nav ul li:first-child a:hover::before {
@@ -85,23 +89,27 @@ nav ul li:nth-child(2) a {
 size: 16px;
 }
 
-p {
+
+
+h1,
+    p {
     margin-bottom: 20px;
+    margin: 8px;
 }
 
    button{
     display: flex;
     flex-direction: row;
     align-items:center;
-    padding: 15px 16px ;
-    
+    padding: 15px 16px 15px 16px ;
+    margin-top: 20px;
     
     position:absolute;
     height: 5px;
-    width: 150px;
-    left: 235px;
+    width: 132px;
+    left: 360px;
     top: 240px;
-    
+    gap: 10px;
     
     color: #F2F2F2;
     background: #0065FC;
@@ -113,30 +121,43 @@ p {
 input {
 display: flex;
 flex-direction: row;
-align-items: center;
-
+padding-right: 30px;
+margin-top: 20px;
 position: absolute;
+
 top: 240px;
-left:65px;
+left:80px;
 height: 31px;
-width: 260px;
+width: 282px;
+
 background-color: white;
 border: 1px solid #f2f2f2;
-gap: 30px;
+font-size: 18px;
 }
 
-/**ajouter une catégorie location dot + input et les mettres dans une box**/
+/**rajouter une marge**/
+input::placeholder{
+    font-family:'raleway';
+font-style: normal;
+font-weight: bold;
+font-size:18px;
+opacity: 1;
+text-align: center;
+
+}
+
+
 
 .fa-location-dot {
 display: flex;
 flex-direction: row;
 align-items: center;
-
+margin-top: 20px;
 position: absolute;
 
 height: 31px;
-width: 30px;
-left: 38px;
+width: 35px;
+left: 48px;
 top:240px;
 
     color: black;
@@ -144,6 +165,98 @@ background-color: #F2F2F2;
 border-radius: 15px 0px 0px 12px;
 
 }
+
+.filtre:hover {
+
+    background-color: #DEEBFF;
+}
+
+.filtres {
+    display: flex;
+flex-direction: row;
+list-style: none;
+margin-top: 80px;
+justify-content: flex-start;
+font-weight: bold;
+}
+
+.filtre {
+
+background-color: white;
+border-radius: 25px;
+display: flex;
+align-items: center;
+margin-left: 30px;
+padding: 4px 20px 4px 20px;
+border: 2px solid #d9d9d9;
+}
+
+.filtre span {
+
+    margin-left: 20px;
+}
+
+b {
+display: flex;
+flex-direction: row;
+left: 50px;
+align-items: center;
+}
+
+.filtre.economique{
+
+width: 175px;
+height: 48px;
+
+}
+
+
+.filtre.familial {
+    width: 136px;
+    height: 48px;
+
+}
+
+
+.filtre.romantique {
+    width: 172px;
+    height: 48px;
+
+}
+
+
+.filtre.animaux{
+    width: 226px;
+    height: 48px;
+
+}
+
+.info {
+
+    padding-top: 53px;
+}
+
+.fa-circle-info {
+box-sizing: border-box;
+
+align-items: flex-start;
+border: 1px solid #d9d9d9;
+border-radius: 24px 24px 24px 24px;
+color: white;
+background-color: #0065FC;
+
+}
+
+.span {
+
+    display: flex;
+    align-items: flex-start;
+margin-left: 0px;
+
+
+}
+
+
 
 .section-title {
     margin: 0;
@@ -155,11 +268,13 @@ border-radius: 15px 0px 0px 12px;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+
 }
 
 .card img {
     object-fit: cover;
 }
+
 
 .card-title {
     font-size: 16px;
@@ -190,6 +305,49 @@ border-radius: 15px 0px 0px 12px;
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+
+}
+
+
+.hébergements-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hébergements-cards  {
+    display: flex;
+    margin-top: 33px;
+justify-content: flex-start;
+}
+
+.hébergements-cards img {
+    width: 100%;
+    height: 134px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hébergements-cards .card-content {
+    
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.hébergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hébergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hébergements-cards .card-rating {
+    margin-bottom: 5px;
 }
 
 /****** Populaires ***********/
