@@ -264,16 +264,23 @@ margin-left: 0px;
 }
 
 .card {
+    width:auto;
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    margin: 6px;
+
 
 }
     .card img {
     object-fit: cover;
 width: 100%;
 
+}
+
+.lien-hébergements{
+    width: 240px;
 }
 
 
@@ -320,27 +327,19 @@ gap: 40px;
 
 
 .hébergements-cards {
-max-width: 80%;
+    max-width: auto;
     display: flex;
-    margin-top: 33px;
     flex-wrap: wrap;
-    flex-direction: row;
-justify-content: space-between;
-align-items: center;
+    margin-top: 33px;
 
 }
-.hébergements .card {
 
-margin: 20px;
-}
 
 .hébergements-cards img {
     height: 124px;
    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-
-
 }
 
 
