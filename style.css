@@ -2,7 +2,7 @@
 
 * {
     
-    position: flex;
+    
     font-family: 'Raleway', sans-serif;
     justify-content: center;
         max-width: 1440px;
@@ -40,10 +40,13 @@ body {
 header {
     padding-bottom: 63px;
 }
+.logo img {
+    width: 61px;
 
+}
 nav {
 position: absolute;
-top:48px;
+top: 16px;
 right:570px;
 float: right;
 
@@ -99,16 +102,14 @@ h1,
 
    button{
     display: flex;
-    flex-direction: row;
     align-items:center;
     padding: 15px 16px 15px 16px ;
-    margin-top: 20px;
-    
+    top: 243px;
+    left: 290px;
     position:absolute;
-    height: 5px;
-    width: 132px;
-    left: 360px;
-    top: 240px;
+    height: 49px;
+
+    
     gap: 10px;
     
     color: #F2F2F2;
@@ -119,17 +120,11 @@ h1,
     }
 
 input {
-display: flex;
-flex-direction: row;
-padding-right: 30px;
-margin-top: 20px;
+
 position: absolute;
-
-top: 240px;
-left:80px;
-height: 31px;
-width: 282px;
-
+top: 243px;
+left:82px;
+height: 49px;
 background-color: white;
 border: 1px solid #f2f2f2;
 font-size: 18px;
@@ -150,17 +145,11 @@ text-align: center;
 
 .fa-location-dot {
 display: flex;
-flex-direction: row;
 align-items: center;
-margin-top: 20px;
-position: absolute;
-
-height: 31px;
-width: 35px;
-left: 48px;
-top:240px;
-
-    color: black;
+margin-top: 35px;
+height: 49px;
+width: 33px;
+color: black;
 background-color: #F2F2F2;
 border-radius: 15px 0px 0px 12px;
 
@@ -258,22 +247,29 @@ margin-left: 0px;
 
 
 
-.section-title {
+.hébergement-and-populaires title {
     margin: 0;
     font-size: 22px;
 }
 
 .card {
+    width:auto;
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    margin: 6px;
+
 
 }
     .card img {
     object-fit: cover;
 width: 100%;
 
+}
+
+.lien-hébergements{
+    width: 240px;
 }
 
 
@@ -315,32 +311,24 @@ gap: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+padding-left: 30px;
 }
 
 
 .hébergements-cards {
-max-width: 80%;
+    max-width: auto;
     display: flex;
-    margin-top: 33px;
     flex-wrap: wrap;
-    flex-direction: row;
-justify-content: space-between;
-align-items: center;
+    margin-top: 33px;
 
 }
-.hébergements .card {
 
-margin: 20px;
-}
 
 .hébergements-cards img {
     height: 124px;
    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-
-
 }
 
 
@@ -366,7 +354,13 @@ margin: 20px;
     margin-bottom: 5px;
 
 }
-
+.Plus  {
+    display: flex;
+        margin-top:40px ;
+    justify-content: flex-start;
+    font-weight: bold;
+padding-left: 30px;
+}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -413,4 +407,109 @@ margin: 20px;
 }
 
 
+/**activités**/
 
+.activités {
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+
+
+.activités-title  {
+   
+   align-items: flex-start;
+   padding-left: 50px;
+}
+
+.cards {
+width: 297.5px;
+background-color: white;
+border-radius: 20px;
+filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+margin-left: 20px;
+margin-top: 30px;
+}
+ 
+.activités-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+margin-right: 25px;
+
+}
+
+.lien-activités{
+width: 297.5px;
+
+}
+.activités-cards img{
+height: 380px;
+width: 100%;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+object-fit:cover;
+}
+.activités-cards .card-content{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing:border-box;
+}
+
+
+
+.activités-cards .card-title {
+
+    padding: 20px 20px 19px 19px;
+font-family: 'raleway';
+font-weight: bold;
+font-size: 16px;
+
+}
+
+/**footer**/
+footer {
+  display: flex;
+ 
+  justify-content: space-evenly;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 65px;
+}
+
+.colonne {
+  flex-basis: calc(33.33% - 20px);
+ 
+  
+}
+
+.colonne h3 {
+padding-bottom: 15px;
+   
+ 
+}
+
+.colonne ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.colonne ul li {
+  margin-bottom: 10px;
+ display:list-item;
+ 
+}
+
+.colonne ul li div {
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.colonne ul li div:hover  {
+  text-decoration: underline;
+}
