@@ -86,7 +86,7 @@ transform: translateX(-50%);
 
 nav ul li:nth-child(2) a {
     color:black;
-resize: 16px;
+
 }
 
 
@@ -154,6 +154,7 @@ width: 33px;
 color: black;
 background-color: #F2F2F2;
 border-radius: 15px 0px 0px 12px;
+padding-left: 10px;
 
 }
 
@@ -180,6 +181,7 @@ align-items: center;
 margin-left: 30px;
 padding: 4px 20px 4px 20px;
 border: 2px solid #d9d9d9;
+height: 48px;
 }
 
 .filtre span {
@@ -196,7 +198,7 @@ align-items: center;
 
 .filtre .economique{
 
-width: 175px;
+width: 173px;
 height: 48px;
 
 }
@@ -318,7 +320,7 @@ padding-left: 30px;
 
 
 .hébergements-cards {
-    max-width: auto;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin-top: 33px;
