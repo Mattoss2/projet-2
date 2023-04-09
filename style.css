@@ -4,7 +4,7 @@
     
     
     font-family: 'Raleway', sans-serif;
-    justify-content: center;
+   
         max-width: 1440px;
         box-sizing: border-box;
         font-family: "Raleway";
@@ -86,7 +86,7 @@ transform: translateX(-50%);
 
 nav ul li:nth-child(2) a {
     color:black;
-size: 16px;
+resize: 16px;
 }
 
 
@@ -194,7 +194,7 @@ left: 50px;
 align-items: center;
 }
 
-.filtre.economique{
+.filtre .economique{
 
 width: 175px;
 height: 48px;
@@ -202,14 +202,14 @@ height: 48px;
 }
 
 
-.filtre.familial {
+.filtre .familial {
     width: 136px;
     height: 48px;
 
 }
 
 
-.filtre.romantique {
+.filtre .romantique {
     width: 172px;
     height: 48px;
 
@@ -407,6 +407,8 @@ padding-left: 30px;
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
+/**activités**/
 
 
 /**activités**/
