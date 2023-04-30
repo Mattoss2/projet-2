@@ -26,10 +26,8 @@
 
 
 .main-container {
-   max-width: 1440px;
+    max-width: 1440px;
     width: 100%;
-    padding:  50px;
-    box-sizing: border-box;
     padding-bottom: 50px;
     margin: auto;
 }
@@ -296,9 +294,10 @@ width: 100%;
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
-    gap: 50px;   
-}
+    gap: 50px;  
+    width: 100%; 
 
+}
 
 /****** Hebergements ***********/
 .hebergements {
@@ -371,7 +370,6 @@ color: black;
 }
 /****** Populaires ***********/
 .populaires {
-    width: 33%;
     padding: 20px;
 }
 
@@ -956,8 +954,6 @@ margin-top: 50px;
 }
     .populaires {
 
-width: 375px;
-margin-left: -50px;
 padding-left: 30px;
     }
     
