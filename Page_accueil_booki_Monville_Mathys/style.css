@@ -41,7 +41,11 @@ header {
     width: 61px;
 
 }
+nav {
 
+float: right;
+
+}
  
 ul{
 list-style: none;
@@ -303,7 +307,7 @@ padding: 20px;
 
 }
 .hebergements .card{
-    width: 31.5%;
+    width: 30%;
 }
 .hebergements .card a {
     width: 100%;
@@ -317,7 +321,7 @@ padding-left: 45px;
 
 
 .hébergements-cards {
-    
+    max-width: 769px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 17px;
@@ -560,7 +564,10 @@ padding-bottom: 15px;
         padding: 0px;
         margin-left: 13px;
     }
-  
+    .hébergements-cards{
+    max-width: 101%;
+    margin-left: 9px;
+    }
     .populaires-title{
         font-size: 15px;
         margin: 5px;
@@ -586,7 +593,10 @@ padding-bottom: 15px;
     
     }
 @media (min-width:1297px){
-  
+    .hébergements-cards{
+        width: 850px;
+        
+    }
 .lien-hébergements{
     width: 250px;
 }
@@ -618,7 +628,11 @@ padding-bottom: 15px;
    .main-container{
     padding: 20px;
    }
- 
+    nav {
+        
+       
+        float: right;
+    }   
 
         nav ul li:first-child a:hover::before {
             content: "";
@@ -700,10 +714,11 @@ padding-bottom: 15px;
         padding-left:0px;
     }
 .hébergements-cards{
-    
+    max-width: 88%;
     display: flex;
     flex-wrap: wrap;
 margin-top: 17px;
+margin-left: 10px;
 }
 
     .hebergements {
@@ -759,7 +774,8 @@ margin-top: 17px;
         margin-right: 15px;
     }
     .activités .cards {
-        margin-left: 0px;
+        width: 193.5px;
+        margin-left: 9px;
         margin-top: 30px;
         height: 268px;
     }
@@ -768,9 +784,7 @@ margin-top: 17px;
 /* Small devices (phones, less than 768px) */
 @media  (max-width: 767.98px) {
     
- header{
-    margin-top: 10px;
- }
+ 
     .main-container{
         overflow-x: hidden;
         padding: 0px;
@@ -784,31 +798,35 @@ margin-top: 17px;
 a{
     padding: 12px;
 }
-    nav{
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom:10px;
-    }
-         nav ul li{
-            width: 50%;
-            text-align: center;
-            border-bottom: 1px solid #8080805e;
-         }
-         nav ul{
-            display: flex;
+    nav {
+        
+   
+        float: right;
+        
+        }
+         
+  nav ul li:first-child a:hover::before {
+    content: "";
+display: block;
+   position: absolute; 
+height: 2px;
+    background-color: #0065FC;
+    width: 140px; 
 
-         }
-         nav ul li:first-child a{
-            background-color: transparent;
-           
-         }
-         nav ul li:first-child a:hover::before{
-            width: 0px;
-         }
-         nav ul li:hover{
-            border-color: #0065FC;
-         }
-
+transform: translateX(-50%);
+top:82%;
+}
+nav ul li:last-child a:hover::before{
+    content: "";
+    display: block;
+       position: absolute; 
+    height: 2px;
+        background-color: #F2F2F2;
+        width: 102px; 
+    
+    transform: translateX(-50%);
+    top: 6%;
+}
 .info{
     padding-top: 35px;
 }
@@ -818,7 +836,7 @@ a{
 }
 h1 {
     font-size: 20px;
-    
+    width: 100%;
    margin-left: 10px;
 }
     p{
@@ -898,7 +916,7 @@ font-size: 24px;
     }
 h2 {
     margin-bottom: 10px;
-    
+    margin-left: 15px;
 }
     .hebergements{
         width: 100%;
@@ -923,13 +941,18 @@ h2 {
 .card{
     width: 100%;
 }
+.hébergements-cards{
+   
+margin-left: 20px;
+}
 
 .lien-hébergements{
     width: 100%;
 }
 .hébergements-title{
-   
-    font-size: 13px;
+    width: 383px;
+    margin-left: 0px;
+    font-size: 15px;
 }
 .hébergements-title h2{
     margin-bottom: 0px;
@@ -948,19 +971,16 @@ h2 {
     .populaires-cards{
         display: flex;
         flex-direction: column;
-       
+        margin-left: 50px;
         
     }
     .activités{
         margin-left: 0px;
-        padding: 17px;
     }
     .populaires-cards .card{
         width: auto;
-   margin-bottom: 10px;
+    margin-left: -40px;
     margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
     }
     .activités-cards {
         flex-direction: column;
@@ -968,14 +988,15 @@ h2 {
         margin-right: 0px;
     }
     .activités .cards{
-        width: 100%;
-        
+        width: 83%;
+        margin-left: 32px;
     }
     .lien-activités{
         width: 100%;
     }
     .activités-title{
-        padding-left: 0px;
+        margin-left: 3px;
+        width: 280px;
     }
     footer{
         
